@@ -1,0 +1,84 @@
+<head>
+  <meta http-equiv='Cache-Control' content='no-cache, no-store, must-revalidate'>
+  <meta http-equiv='Pragma' content='no-cache'>
+  <meta http-equiv='Expires' content='0'>
+  <title>Sanal Makine Yönetim Paneli</title>
+</head>
+<style>
+  body {
+    background-color: #f9f9f9;
+    /* Light gray background */
+    color: #333333;
+    /* Dark gray text */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  h1 {
+    font-size: 2rem;
+    color: #222222;
+    /* Slightly darker gray */
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1rem;
+    color: #555555;
+    /* Medium gray */
+    margin-bottom: 2rem;
+  }
+
+  button {
+    font-size: 1rem;
+    color: #ffffff;
+    /* White text */
+    background-color: #007BFF;
+    /* Blue button */
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 0 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+    /* Darker blue */
+  }
+
+  form {
+    display: inline;
+  }
+</style>
+
+<body>
+  <h1>Sanal makina kontrol paneli</h1>
+  <!-- <marquee>Please don't hack :( / Lütfen hackleme :( / Por favor, no hackees :( / Bitte nicht hacken :( / 请不要黑 :( / -->
+  <!--   Пожалуйста, не взламывайте :( / Per favore, non hackerare :( / Por favor, não hackeie :( / Δεν παραβιάζεις :( / Vă -->
+  <!--   rog să nu hack :( / Hack yapmayın lütfen :( / お願いですからハッキングしないで :( / o wile ala pakala :(</marquee> -->
+  <form action='/' method='GET' style='display: inline;'>
+    <button type='submit'>SUNUCU DURUMUNU GÖRÜNTÜLE</button>
+  </form>
+  <form action='/reboot' method='POST' style='display: inline;'>
+    <button type='submit'>Yeniden başlat</button>
+  </form>
+  <form action='/destroy' method='POST' style='display: inline;'>
+    <button type='submit'>Kapat</button>
+  </form>
+  <form action='/start' method='POST' style='display: inline;'>
+    <button type='submit'>Aç</button>
+  </form>
+
+  <h1>Kulanım kılavuzu</h1>
+  <p> Makine siyah ekranda kaldığı zaman yeniden başlatmak yeterlidir</p>
+  </br>
+<p> Sayfayı yenileme, onun yerine "Sunucu durumunu güncelle tuşuna bas"</p>
+
